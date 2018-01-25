@@ -1,3 +1,6 @@
+# To run this automatically when pdfs are updated, add the make
+# command to a "post-merge" git hook, i.e. "make -C schematics"
+
 thumbnails := $(patsubst %.pdf,%_thumbnail.png,$(wildcard *.pdf))
 
 %_thumbnail.png: %.pdf
