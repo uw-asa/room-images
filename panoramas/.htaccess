@@ -1,2 +1,3 @@
 SetEnvIf Origin "https://(www(udev.cac)?.washington.edu|eventservices(.(dev|test).cms2.asa)?.uw.edu)$" AccessControlAllowOrigin=$0
 Header always set Access-Control-Allow-Origin %{AccessControlAllowOrigin}e
+Header always set Vary: Origin
